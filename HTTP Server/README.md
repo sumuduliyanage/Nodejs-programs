@@ -5,7 +5,7 @@ on the other hand, a simple web server also serves as an excellent demonstration
 Let's take a look at a very simple example:
 
 ### Code for simple http server
-<span style="color:blue">
+
 const http = require('http');
 
 const requestListener = function (req, res) {
@@ -14,16 +14,16 @@ const requestListener = function (req, res) {
 }
 const server = http.createServer(requestListener);
 server.listen(8080);
-</span>
+
 
 ### How to run
 
-Save this in a file called server.js - run <span style="color:blue">node server.js</span>, and your program will hang there... it's waiting for connections to respond to, so you'll have to give it 
+Save this in a file called server.js - run node server.js, and your program will hang there... it's waiting for connections to respond to, so you'll have to give it 
 one if you want to see it do anything. Try opening up a browser, and typing localhost:8080 into the location bar. If everything has been set up correctly, you should 
 see your server saying hello!
 
 Also, from your terminal you should be able to get the response using curl:
-<span style="color:blue">curl localhost:8080</span>
+curl localhost:8080
 
 ### Description
 Let's take a more in-depth look at what the above code is doing. First, a function is defined called requestListener that takes a request object and a response object as parameters.
