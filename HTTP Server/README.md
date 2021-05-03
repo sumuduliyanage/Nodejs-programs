@@ -17,7 +17,7 @@ see your server saying hello!
 
 Also, from your terminal you should be able to get the response using curl:
 
- <style>H1{color:Blue;} curl localhost:8080 </style>
+ <pre>curl localhost:8080</prev>
 
 ### Description
 Let's take a more in-depth look at what the above code is doing. First, a function is defined called requestListener that takes a request object and a response object as parameters.
